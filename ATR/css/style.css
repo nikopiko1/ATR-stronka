@@ -1,0 +1,594 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* header  */
+
+.header {
+    position: absolute;
+    height: 330px;
+    background-image: url(../img/akademia.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+/* .hero-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0,0.8);
+} */
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.hero-text h1 {
+    margin-bottom: 5px;
+    text-shadow: 3px 3px 5px #333;
+    color: #ddd;
+}
+
+
+
+.section-title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+section {
+    scroll-margin-top: 60px;
+}
+
+
+
+
+
+/* nawigacja */
+nav {
+    position: sticky;
+    top: 0;
+    height: 60px;
+    line-height: 60px;
+    background-color: #ddd;
+    text-align: center;
+    z-index: 10;
+}
+
+
+.burger-icon {
+    display: block;
+    margin-left: auto;
+    padding: 0 20px;
+    line-height: 60px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-items {
+    display: none;
+}
+
+/* main  */
+
+main {
+    margin: 60px 0;
+}
+
+/* o nas  */
+.about-us-info {
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+
+/* produkty */
+
+.products {
+    margin: 60px auto;
+
+}
+
+.product {
+    position: relative;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-size: 36px;
+}
+
+.product:hover h3 {
+    transform: scale(1.6);
+    color: palevioletred;
+    transition: 0.3s;
+}
+
+.product h3 {
+    text-transform: uppercase;
+    transition: transform 0.3s;
+}
+
+.first-product {
+    background-image: url(../img/akademia/CZYTANIE1.jpg);
+}
+
+.seccond-product {
+    background-image: url(../img/szkolenia\ nauczycieli.jpg);
+}
+.third-product {
+    background-image: url(../img/work_small.jpg);
+}
+.fourth-product {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/konsultacje.jpg);
+}
+
+
+
+a{
+    text-decoration: none;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* kontakt */
+
+.contact {
+    text-align: center;
+    
+}
+.contact h3 {
+    margin: 20px 0 5px;
+    text-transform: uppercase;
+
+}
+
+/* footer  */
+footer {
+    padding: 10px 10px;
+    text-align: center;
+    background-color: #ddd;
+}
+
+
+
+
+.zdjecia {
+    display: flex;
+    flex-direction: row;
+    background-size: 100%;
+}
+
+.zdjecia-text {
+    position: relative;
+    text-align: center;
+}
+
+.zdjecia-img img {
+    position: relative;
+    background-size: 100%;
+    width: 65vh;
+    height: 45vh;
+    margin: 10px;
+}
+
+.czytanie-text {
+    text-align: center;
+}
+
+.see_more {
+    text-align: center;
+    left: 50%;
+}
+
+.facebook-btn {
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgb(0, 89, 255);
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/* .szkolenia-choose {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    top: 50vh;
+    color: black;
+} */
+.link {
+    color: #333;
+    text-transform: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.rodzic {
+    position: absolute;
+    right: 5vh;
+    top: 50vh;
+}
+.rodzic_img{
+    position: absolute;
+    width: 50%;
+    height: 85%;
+    left: 50%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/szkolenia\ nauczycieli.jpg);
+
+}
+
+
+.nauczyciel { 
+    position: absolute !important; 
+    left: 5vh;
+    top: 50vh;
+    
+} 
+.nauczyciel_img{
+    position: absolute;
+    width: 50%;
+    height: 85%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/szkolenia\ nauczycieli.jpg);
+}
+
+.color1 {
+    color: #000000;
+    text-decoration: solid;
+}
+.line1 {
+    position: absolute;
+    left: 50%;
+    width: 0;
+    height: 605px;
+    border: 1px solid black;
+
+}
+
+
+
+.szkolenia{
+    font-size: large;
+    text-align: center;
+}
+
+
+
+.wrapper1{
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+}
+
+.collapsible {
+    max-width: 450px;
+    overflow: hidden;
+    font-weight: 500;
+}
+.collapsible input {
+    display: none;
+}
+
+.collapsible label {
+    position: relative;
+    font-weight: 600;
+    background: #fff;
+    box-shadow: 0 5px 11px rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    color: #1c1c6b;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.collapsible label:after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 18px;
+    height: 18px;
+    background: url(../img/angle-right-solid.svg) no-repeat 0 0;
+    transition: all 0.3s ease;
+}
+
+.collapsible input:checked + label:after {
+    transform: rotate(90deg);
+}
+
+.collapsible-text {
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.collapsible input:checked ~ .collapsible-text{
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: #fff;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    opacity: 1;
+    top: 0;
+}
+
+.collapsible-text h2 {
+    margin-bottom: 10px;
+    padding: 15px 15px 0;
+    color: #1c1c6b;
+}
+
+.collapsible-text p {
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+
+
+.cool {background-color: purple;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navi {
+    background: rgb(151, 151, 151);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+.nav .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.closeMenu {
+    cursor: pointer;
+}
+               
+.closeMenu:hover {
+    color: black;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+.facebook-btn:hover {
+    background-color: rgb(37, 15, 235)
+}
+
+
+
+.nav-items a:hover {
+    color: rgb(225, 1, 255);
+
+}
+
+@media (max-width: 750px) { 
+    /* .burger-icon {
+        display: block;
+    } */
+    .nav-items {
+        display: none;
+    }
+    .header {
+        display: block;
+        position: relative;
+        height: 200px;
+        background-image: url(../img/akademia.jpg);
+    }
+    .navi .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(204, 203, 203);
+        transition: top 1s ease;
+        display: none;
+    }
+    .navi .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .navi .openMenu {
+        display: block;
+    }
+    .navi .mainMenu li a:hover {
+        background: none;
+        color: rgb(225, 0, 255);
+        font-size: 1.6rem;
+        transition: 0.3s;
+    }
+    .icons {
+        display: inline-block;
+        padding: 12px;
+    }
+    .czyt-pics {
+        left: 17vh;
+        padding: 10px;
+    }
+    .nauczyciel {
+        left: 5vh;
+    }
+    .rodzic {
+        right: 5vh;
+    }
+
+}
+
+@media (min-width: 750px) {
+    .navi {
+        display: none;
+    }
+    .burger-icon {
+        display: none;
+    }
+     .nav-items {
+        display: block;
+    }
+
+    .nav-items a {
+        padding: 0 30px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #333;
+        transition: color 0.3s;
+        
+    }
+    .header {
+        position: relative;
+        height: 400px;
+        background-image: url(../img/Akademia\ Twórczego\ \ Rozwoju\ logo\ fioletowy.png);
+    
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+        
+    }
+    .hero-text p {
+        font-size: 18px;
+    }
+    
+    .product h3{
+        font-size: 24px;
+    }
+    
+    
+}
+
+
+@media (min-width: 992px) {
+    .burger-icon {
+        display: none;
+    }
+     .nav-items {
+        display: block;
+    }
+
+    .product-box {
+        font-size: 0;
+    }
+    
+    .product {
+        display:inline-block ;
+        width: 50%;
+    }
+}
+@media (min-width: 1200px) {
+    .burger-icon {
+        display: none;
+    }
+     .nav-items {
+        display: block;
+    }
+    .hero-text h1 {
+        font-size: 42px;
+    }
+    .hero-text p {
+        font-size: 20px;
+    }
+}
+
+
+
+
+    
+    
